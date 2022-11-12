@@ -1,8 +1,8 @@
 
 //Los puntos de entrada de backend deben ser iguales aqui 
 const ApiBack = {
-  URL_LOCAL: "http://localhost:3123",
-  URL: "https://doctortestdeploy.herokuapp.com",
+  URL: "http://localhost:3123",
+  URL_LOCAL: "https://doctortestdeploy.herokuapp.com",
   
   CREAR_USUARIO: "/api/publica/usuario/crear",
   INICIAR_SESION: "/api/publica/usuario/iniciar",

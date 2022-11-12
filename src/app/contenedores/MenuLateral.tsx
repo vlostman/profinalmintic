@@ -25,7 +25,7 @@ export const MenuLateral = () => {
 
 
     // Habilitar por defecto al usuario administrador
-    opciones = opcionesAdmin;
+    // opciones = opcionesAdmin;
 
 
     return (

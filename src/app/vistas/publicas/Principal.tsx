@@ -37,23 +37,23 @@ export const Principal = () => {
             <div className="collapse navbar-collapse" id="navbarCollapse">
               <ul className="navbar-nav me-auto mb-2 mb-md-0">
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="/#">
+                  <a className="nav-link" aria-current="page" href="/">
                     Inicio
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/#">
-                    Opción 1
+                    Consultas
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/#">
-                    Opción 2
+                    Contactanos
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/#">
-                    Opción 3
+                  <a className="nav-link" href="/dashboard/about">
+                    Nosotros
                   </a>
                 </li>
                 <li className="nav-item dropdown">
@@ -64,31 +64,75 @@ export const Principal = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Menú desplegable
+                    Servicios
                   </a>
                   <ul className="dropdown-menu">
                     <li>
                       <a className="dropdown-item" href="/#">
-                        Otra opción 1
+                        Medicina General
                       </a>
                     </li>
                     <li>
                       <a className="dropdown-item" href="/#">
-                        Otra opción 2
+                        Odontologia
                       </a>
                     </li>
                     <li>
                       <a className="dropdown-item" href="/#">
-                        Otra opción 3
+                        Medicina Interna
                       </a>
                     </li>
-                  </ul>
+                    <li>
+                      <a className="dropdown-item" href="/#">
+                        Cirugia Estetica
+                      </a>
+                      </li>
+                      </ul>
                 </li>
+                {/* <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="/#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Odontologia
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item" href="/#">
+                        Ortodoncia
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/#">
+                        Rehabilitacion Oral
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/#">
+                        Cirugia Oral
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/#">
+                        Endodoncia
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/#">
+                        Odontopediatria
+                      </a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li className="nav-item dropdown">
+                  </li> */}
               </ul>
               <Link to="/login">
               <span className="navbar-text">Iniciar sesión</span>
               </Link>
-              
             </div>
           </div>
         </nav>
@@ -135,11 +179,11 @@ export const Principal = () => {
               <img src={fondo01} alt="" />
               <div className="container">
                 <div className="carousel-caption">
-                  <h1>Nuestros productos</h1>
-                  <p>Directos del campo</p>
+                  <h1>Medicina General</h1>
+                  <p>Atencion Integral a la mano</p>
                   <p>
-                    <a className="btn btn-sm btn-primary" href="/#">
-                      Más información
+                    <a className="btn btn-sm btn-primary" href="/login">
+                      Entrar
                     </a>
                   </p>
                 </div>
@@ -153,8 +197,8 @@ export const Principal = () => {
                   <h1>Medicina especializada</h1>
                   <p>Tu vida es lo primero</p>
                   <p>
-                    <a className="btn btn-sm btn-primary" href="/#">
-                      Más información
+                    <a className="btn btn-sm btn-primary" href="/login">
+                      Entrar
                     </a>
                   </p>
                 </div>
@@ -165,11 +209,11 @@ export const Principal = () => {
               <img src={fondo03} alt="" />
               <div className="container">
                 <div className="carousel-caption text-start">
-                  <h1>Tú mascota</h1>
-                  <p>Lo más importante para nosotros</p>
+                  <h1>Somos</h1>
+                  <p>Aliados para proteger la salud de nuestros usuarios</p>
                   <p>
-                    <a className="btn btn-sm btn-primary" href="/#">
-                      Más información
+                    <a className="btn btn-sm btn-primary" href="/login">
+                      Entra
                     </a>
                   </p>
                 </div>
@@ -183,11 +227,12 @@ export const Principal = () => {
                   <h1>Mesa de ayuda</h1>
                   <p>Estamos para ayudarte</p>
                   <p>
-                    <a className="btn btn-sm btn-primary" href="/#">
-                      Más información
+                    <a className="btn btn-sm btn-primary" href="/login">
+                      Entra
                     </a>
                   </p>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -292,7 +337,7 @@ export const Principal = () => {
               <a href="/#">Inicio página</a>
             </p>
             <p>
-              © 2022 Nombre del equipo.<br />Grupo asignado:<br />Formador:<br />Tutor:<br />Mentor:
+              Desarrollo de Software U16 ©2022 .<br />Grupo asignado: Grupo 10<br />Formador: Carlos Andres Gutierrez<br />Tutor: Deiver Guerra<br />
             </p>
           </footer>
         </div>

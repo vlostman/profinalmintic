@@ -21,9 +21,9 @@ export const MenuSuperior = () => {
     return (
         <header id="header" className="header fixed-top d-flex align-items-center">
             <div className="d-flex align-items-center justify-content-between">
-                <a href="index.html" className="logo d-flex align-items-center">
+                <a href="/dashboard" className="logo d-flex align-items-center">
                     <img src="assets/img/logo.png" alt="" />
-                    <span className="d-none d-lg-block">MisiónTIC 2022</span>
+                    <span className="d-none d-lg-block">Tu Consultorio</span>
                 </a>
                 <i className="bi bi-list toggle-sidebar-btn" onClick={OcultarMenu}></i>
             </div>
@@ -48,10 +48,10 @@ export const MenuSuperior = () => {
 
                         <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
                             <li className="dropdown-header">
-                                You have 4 new notifications
+                                Tienes 4 notificationes
                                 <a href="/#">
                                     <span className="badge rounded-pill bg-primary p-2 ms-2">
-                                        View all
+                                        Ver todo
                                     </span>
                                 </a>
                             </li>
@@ -62,10 +62,10 @@ export const MenuSuperior = () => {
                             <li className="notification-item">
                                 <i className="bi bi-exclamation-circle text-warning"></i>
                                 <div>
-                                    <h4>Lorem Ipsum</h4>
-                                    <p>Quae dolorem earum veritatis oditseno</p>
-                                    <p>30 min. ago</p>
-                                </div>
+                                    <h4>Estados</h4>
+                                    <p>Consulta</p>
+                                
+                                </div> 
                             </li>
 
                             <li>
@@ -75,9 +75,8 @@ export const MenuSuperior = () => {
                             <li className="notification-item">
                                 <i className="bi bi-x-circle text-danger"></i>
                                 <div>
-                                    <h4>Atque rerum nesciunt</h4>
-                                    <p>Quae dolorem earum veritatis oditseno</p>
-                                    <p>1 hr. ago</p>
+                                    <h4>Agendas</h4>
+                                    <p>1 Nota</p>
                                 </div>
                             </li>
 
@@ -88,9 +87,8 @@ export const MenuSuperior = () => {
                             <li className="notification-item">
                                 <i className="bi bi-check-circle text-success"></i>
                                 <div>
-                                    <h4>Sit rerum fuga</h4>
-                                    <p>Quae dolorem earum veritatis oditseno</p>
-                                    <p>2 hrs. ago</p>
+                                    <h4>Cambios</h4>
+                                    <p>1 Notificacion</p>
                                 </div>
                             </li>
 
@@ -101,9 +99,9 @@ export const MenuSuperior = () => {
                             <li className="notification-item">
                                 <i className="bi bi-info-circle text-primary"></i>
                                 <div>
-                                    <h4>Dicta reprehenderit</h4>
-                                    <p>Quae dolorem earum veritatis oditseno</p>
-                                    <p>4 hrs. ago</p>
+                                    <h4>Horarios</h4>
+                                    <p>1 Notificacion</p>
+                                
                                 </div>
                             </li>
 
@@ -111,7 +109,7 @@ export const MenuSuperior = () => {
                                 <hr className="dropdown-divider" />
                             </li>
                             <li className="dropdown-footer">
-                                <a href="/#">Show all notifications</a>
+                                <a href="/#">Mostrar todas las notificaciones</a>
                             </li>
                         </ul>
                     </li>
@@ -128,10 +126,10 @@ export const MenuSuperior = () => {
 
                         <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
                             <li className="dropdown-header">
-                                You have 3 new messages
+                                Tienes 3 Mensajes
                                 <a href="/#">
                                     <span className="badge rounded-pill bg-primary p-2 ms-2">
-                                        View all
+                                        Ver Todos
                                     </span>
                                 </a>
                             </li>
@@ -149,10 +147,9 @@ export const MenuSuperior = () => {
                                     <div>
                                         <h4>Maria Hudson</h4>
                                         <p>
-                                            Velit asperiores et ducimus soluta repudiandae labore
-                                            officia est ut...
+                                            Pedido de cita
                                         </p>
-                                        <p>4 hrs. ago</p>
+                                        <p>4 hrs. antes</p>
                                     </div>
                                 </a>
                             </li>
@@ -170,10 +167,9 @@ export const MenuSuperior = () => {
                                     <div>
                                         <h4>Anna Nelson</h4>
                                         <p>
-                                            Velit asperiores et ducimus soluta repudiandae labore
-                                            officia est ut...
+                                            Cambio de Medicamentos
                                         </p>
-                                        <p>6 hrs. ago</p>
+                                        <p>6 hrs. antes</p>
                                     </div>
                                 </a>
                             </li>
@@ -191,10 +187,9 @@ export const MenuSuperior = () => {
                                     <div>
                                         <h4>David Muldon</h4>
                                         <p>
-                                            Velit asperiores et ducimus soluta repudiandae labore
-                                            officia est ut...
+                                            Direccion
                                         </p>
-                                        <p>8 hrs. ago</p>
+                                        <p>8 hrs. antes</p>
                                     </div>
                                 </a>
                             </li>
@@ -203,7 +198,7 @@ export const MenuSuperior = () => {
                             </li>
 
                             <li className="dropdown-footer">
-                                <a href="/#">Show all messages</a>
+                                <a href="/#">Mostrar todos los Mensajes</a>
                             </li>
                         </ul>
                     </li>

@@ -234,7 +234,13 @@ export const CitaCrear = () => {
                       ]}
                       id="fechaCita"
                     />
-                  </div>
+                  </div> 
+
+{/* 
+                  //Style prueba
+                  <div class="calendly-inline-widget" data-url="https://calendly.com/jimenezjeffrey/30min" style={{min-width:320px;height:630px;}}></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+ ///////////////////////////////// */}
                 </div>
 
                 <Form.Group as={Row} className="mb-3">

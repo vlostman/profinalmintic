@@ -8,7 +8,7 @@ export const AcercaDe = () => {
                 <nav>
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item">
-                            <a href="index.html">Inicio</a>
+                            <a href="/dashboard">Inicio</a>
                         </li>
                         <li className="breadcrumb-item active">Listado de tripulantes</li>
                     </ol>

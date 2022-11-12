@@ -28,14 +28,21 @@ const opcionesAdmin = [
 // *********************************************************************************
 
 const opcionesInvitado = [
-    { nombre: "Acerca de", icono: "bi bi-grid", ruta: "/dashboard/about", hijos: [], },
+
     {
-        nombre: "Compras", icono: "bi bi-clipboard-data", ruta: "", hijos: [
-            { nombre: "Pendientes", icono: "bi bi-circle", ruta: "/dashboard/admuser", },
-            { nombre: "Productos", icono: "bi bi-circle", ruta: "/dashboard/admuser" },
-            { nombre: "Antiguas", icono: "bi bi-circle", ruta: "/dashboard/admuser", }
+        nombre: "Servicios", icono: "bi bi-clipboard-data", ruta: "", hijos: [
+            { nombre: "En Proceso", icono: "bi bi-circle", ruta: "/dashboard/admuser", },
+            { nombre: "Finalizado", icono: "bi bi-circle", ruta: "/dashboard/admuser" },
         ]
-    }
+    },
+    {
+        nombre: "Citas", icono: "bi bi-calendar", ruta: "", hijos: [
+            { nombre: "Pendiente", icono: "bi bi-circle", ruta: "/dashboard/listma", },
+            { nombre: "Agendar Cita", icono: "bi bi-circle", ruta: "/dashboard/addma" },
+            { nombre: "Cancelada", icono: "bi bi-circle", ruta: "/dashboard/admma", },
+        ]
+    },
+    { nombre: "Acerca de", icono: "bi bi-grid", ruta: "/dashboard/about", hijos: [], },
 ];
 
 export { opcionesAdmin, opcionesInvitado };
