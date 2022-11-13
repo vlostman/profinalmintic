@@ -13,6 +13,8 @@ import fondo02 from "./../../../assets/image/fondo02.png";
 import fondo03 from "./../../../assets/image/fondo03.png";
 import fondo04 from "./../../../assets/image/fondo04.png";
 
+import icon1 from "./../../../assets/image/icon1.png";
+
 export const Principal = () => {
   return (
     <div>
@@ -20,7 +22,7 @@ export const Principal = () => {
       <header>
         <nav className="navbar navbar-expand-md fixed-top bg-light">
           <div className="container-fluid">
-          <Link to="/" className="navbar-brand" >
+          <Link to="/" className="navbar-brand, textColor" >
           <img src={logoReact} alt="" /> Mintic 2022
           </Link>
             <button
@@ -36,27 +38,26 @@ export const Principal = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
               <ul className="navbar-nav me-auto mb-2 mb-md-0">
-                <li className="nav-item">
+                <li className="nav-item, tm-link left">
                   <a className="nav-link" aria-current="page" href="/">
                     Inicio
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/#">
-                    Consultas
-                  </a>
-                </li>
-                <li className="nav-item">
+                <li className="nav-item, tm-link left">
+                <Link to="/contacto">
                   <a className="nav-link" href="/#">
                     Contactanos
                   </a>
+                  </Link>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/dashboard/about">
+                <li className="nav-item, tm-link left">
+                <Link to="/nosotros">
+                  <a className="nav-link" href="/about">
                     Nosotros
                   </a>
+                </Link>
                 </li>
-                <li className="nav-item dropdown">
+                <li className="nav-item dropdown, tm-link left">
                   <a
                     className="nav-link dropdown-toggle"
                     href="/#"
@@ -72,12 +73,7 @@ export const Principal = () => {
                         Medicina General
                       </a>
                     </li>
-                    <li>
-                      <a className="dropdown-item" href="/#">
-                        Odontologia
-                      </a>
-                    </li>
-                    <li>
+                  <li>
                       <a className="dropdown-item" href="/#">
                         Medicina Interna
                       </a>
@@ -86,52 +82,24 @@ export const Principal = () => {
                       <a className="dropdown-item" href="/#">
                         Cirugia Estetica
                       </a>
-                      </li>
-                      </ul>
+                      {/* Menu dropdown improvisaado*/}
+                      <div className="dropdown-divider"></div>
+                      <select className="form-select" aria-label="Default select example">
+                          <option selected>Odontologia</option>
+                          <option value="1">Ortodoncia</option>
+                          <option value="2">Rehabilitacion Oral</option>
+                          <option value="3">Cirugia Oral</option>
+                          <option value="3">Endodoncia</option>
+                          <option value="3">Odontopediatria</option>
+                      </select>
+                      {/* Menu dropdown improvisaado*/}
+
+                    </li>
+                  </ul>
                 </li>
-                {/* <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="/#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Odontologia
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="/#">
-                        Ortodoncia
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/#">
-                        Rehabilitacion Oral
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/#">
-                        Cirugia Oral
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/#">
-                        Endodoncia
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/#">
-                        Odontopediatria
-                      </a>
-                    </li>
-                    </ul>
-                    </li>
-                    <li className="nav-item dropdown">
-                  </li> */}
-              </ul>
+                </ul>
               <Link to="/login">
-              <span className="navbar-text">Iniciar sesión</span>
+              <span className="navbar-text">Iniciar Sesion</span>
               </Link>
             </div>
           </div>
@@ -266,9 +234,13 @@ export const Principal = () => {
         {/* Carousel: Fin */}
 
 
+        
+
+
         {/* Cuerpo página principal: Inicio */}
         {/* *************************************************************** */}
         <div className="container marketing">
+        <div className="pimg2">
           <div className="row">
             <div className="col-lg-4">
               <img
@@ -321,28 +293,142 @@ export const Principal = () => {
                 </a>
               </p>
             </div>
+            </div>
           </div>
 
           <hr className="featurette-divider" />
         </div>
+        
         {/* *************************************************************** */}
         {/* Cuerpo página principal: Fin */}
+
+        {/* 22*************************************************************** */}
+        <div className="container marketing">
+        <div className="pimg1">
+          
+          {/**/}
+
+<div id="container">
+		<div className="product-details">
+		<span className="hint free-shipping">Descripcion de Proyecto<p>TuDoctorOnline</p></span>
+	<span className="hint-star star">
+		<i className="fa fa-star" aria-hidden="true"></i>
+		<i className="fa fa-star" aria-hidden="true"></i>
+		<i className="fa fa-star" aria-hidden="true"></i>
+    <i className="fa fa-star" aria-hidden="true"></i>
+    <i className="fa fa-star" aria-hidden="true"></i>
+		<i className="fa fa-star-half-o" aria-hidden="true"></i>
+		<i className="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+  
+		<p className="information">" TuDoctorOnline es una plataforma para el agendamiento de servicios médicos, permite a los usuarios
+registrarse de manera gratuita y acceder al sistema de solicitud de citas médicas."</p>
+<div className="control">
+</div>
+</div>
+<div className="product-image">
+<div className="info">
+<li></li>
+	<ul>
+    <li><strong>Descripcion Tecnica</strong></li>
+		<li><strong>Modulo: Desarrollo de Software U16. </strong>©2022</li>
+		<li><strong>Grupo asignado: </strong>Grupo 10</li>
+		<li><strong>Formador: : </strong>Carlos Andres Gutierrez</li>
+		<li><strong>Tutor: </strong>Deiver Guerra</li>
+		</ul>
+</div>
+</div>
+</div>
+
+
+          {/**/}
+         
+          </div>
+          <hr className="featurette-divider" />
+        </div>
+        
+        {/* 22*************************************************************** */}
+
+
+        {/* 22*************************************************************** */}
+        <div className="container marketing">
+        <div className="pimg4">
+          
+          {/**/}
+          <article className="flow">
+  <h4>Nuestro Equipo de Desarrollo</h4>
+  <p>Patronicados por Misión TIC 2022, operador Universidad industrial de Santander</p>
+  <div className="team">
+    <ul className="auto-grid">
+      
+      <li>
+      <a href="https://github.com/vlostman" className="profile" target="_blank" rel="noopener noreferrer">
+          <h2 className="profile__name">David Munive</h2>
+          <p>Developer</p>
+          <img alt="Profile shot for Marc Dixon" src="https://avatars.githubusercontent.com/u/36352567?v=4" />
+        </a>
+      </li>
+      <li>
+      <a href="https://swop.link/cool" className="profile" target="_blank" rel="noopener noreferrer">
+          <h2 className="profile__name">Anonimo</h2>
+          <p>Developer</p>
+          <img alt="Profile shot for Marc Dixon" src="https://as01.epimg.net/epik/imagenes/2020/06/08/portada/1591619131_634844_1591619268_noticia_normal_recorte1.jpg" />
+        </a>
+      </li>
+      <li>
+      <a href="https://swop.link/cool" className="profile" target="_blank" rel="noopener noreferrer">
+          <h2 className="profile__name">Anonimo</h2>
+          <p>Developer</p>
+          <img alt="Profile shot for Marc Dixon" src="https://as01.epimg.net/epik/imagenes/2020/06/08/portada/1591619131_634844_1591619268_noticia_normal_recorte1.jpg" />
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://swop.link/cool" className="profile" target="_blank" rel="noopener noreferrer">
+          <h2 className="profile__name">Anonimo</h2>
+          <p>Developer</p>
+          <img alt="Profile shot for Chad" src="https://as01.epimg.net/epik/imagenes/2020/06/08/portada/1591619131_634844_1591619268_noticia_normal_recorte1.jpg" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</article>
+          {/**/}
+         
+          </div>
+          <hr className="featurette-divider" />
+        </div>
+        
+        {/* 22*************************************************************** */}
+
+
+
+
+
 
 
         {/* Footer: Inicio */}
         {/* *************************************************************** */}
         <div>
+        <div className="pimg1">
           <footer className="container">
             <p className="float-end">
-              <a href="/#">Inicio página</a>
+              <a href="/#">
+              <img src={icon1} alt=""/>
+              </a>  
+              
+              
             </p>
+            <h6 className="textColor">
             <p>
-              Desarrollo de Software U16 ©2022 .<br />Grupo asignado: Grupo 10<br />Formador: Carlos Andres Gutierrez<br />Tutor: Deiver Guerra<br />
+            Academic Free License v3.0<br />Creative Commons Attribution 4.0 cc<br />
             </p>
+            </h6>
           </footer>
         </div>
         {/* *************************************************************** */}
         {/* Footer: Fin */}
+        </div>
       </main>
     </div>
   );
