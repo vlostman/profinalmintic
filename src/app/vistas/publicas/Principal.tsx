@@ -199,7 +199,7 @@ export const Principal = () => {
                   <p>Aliados para proteger la salud de nuestros usuarios</p>
                   <p>
                     <a className="btn btn-sm btn-primary" href="/login">
-                      Entra
+                      Entrar
                     </a>
                   </p>
                 </div>
@@ -214,7 +214,7 @@ export const Principal = () => {
                   <p>Estamos para ayudarte</p>
                   <p>
                     <a className="btn btn-sm btn-primary" href="/login">
-                      Entra
+                      Entrar
                     </a>
                   </p>
                 </div>
@@ -467,7 +467,7 @@ registrarse de manera gratuita y acceder al sistema de solicitud de citas médic
           <div className="col-xs-6 col-md-3">
             <h6>Links a la Pagina</h6>
             <ul className="footer-links">
-              <li><a href="/about">Acerca de Nosotros</a></li>
+              <li><a href="/nosotros">Acerca de Nosotros</a></li>
               <li><a href="/contacto">Contactanos</a></li>
             </ul>
           </div>
@@ -478,16 +478,16 @@ registrarse de manera gratuita y acceder al sistema de solicitud de citas médic
         <div className="row">
           <div className="col-md-8 col-sm-6 col-xs-12">
             <p className="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
-          <a href="/#">Grupo 10 - Tu Doctor Online</a>.
+          <a href="/#"> Grupo 10 - Tu Doctor Online</a>.
             </p>
           </div>
 
           <div className="col-md-4 col-sm-6 col-xs-12">
             <ul className="social-icons">
-              <li><a className="facebook" href="/#"><i className="fa fa-facebook"></i></a></li>
-              <li><a className="twitter" href="/#"><i className="fa fa-twitter"></i></a></li>
-              <li><a className="dribbble" href="/#"><i className="fa fa-dribbble"></i></a></li>
-              <li><a className="linkedin" href="/#"><i className="fa fa-linkedin"></i></a></li>   
+              <li><a className="facebook" href="/#"><i className="fab fa-facebook-f"></i></a></li>
+              <li><a className="twitter" href="/#"><i className="fab fa-twitter"></i></a></li>
+              <li><a className="dribbble" href="/#"><i className="fab fa-dribbble"></i></a></li>
+              <li><a className="linkedin" href="/#"><i className="fab fa-linkedin-in"></i></a></li>   
             </ul>
           </div>
         </div>
