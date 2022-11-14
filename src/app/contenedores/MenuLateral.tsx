@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logoReact from "../../assets/image/logoReact.png";
 import { ContextoUsuario } from "../seguridad/ContextoUsuario";
 
-import { opcionesAdmin, opcionesInvitado, } from "../utilidades/dominios/OpcionesSistema";
+import { opcionesAdmin, opcionesInvitado, opcionesMedico, opcionesPaciente } from "../utilidades/dominios/OpcionesSistema";
 
 export const MenuLateral = () => {
     let opciones: any[] = [];
@@ -18,6 +18,12 @@ export const MenuLateral = () => {
         case "Invitado":
             opciones = opcionesInvitado;
             break;
+        case "Medico":
+            opciones = opcionesMedico;
+            break;
+        case "Paciente":
+            opciones = opcionesPaciente;
+            break;
         default:
             console.log("No hay menú...");
             break;
@@ -25,7 +31,7 @@ export const MenuLateral = () => {
 
 
     // Habilitar por defecto al usuario administrador
-    // opciones = opcionesAdmin;
+   // opciones = opcionesAdmin;
 
 
     return (

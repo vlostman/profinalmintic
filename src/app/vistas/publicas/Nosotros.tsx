@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "./../../../assets/css/styles.css";
 import logoReact from "./../../../assets/image/logoReact.png";
+import avat1 from "./../../../assets/image/kelly.jpg";
+import avat2 from "./../../../assets/image/Jeffrey.jpg";
 
 export const Nosotros = () => {
     return (
@@ -10,7 +12,7 @@ export const Nosotros = () => {
                 <nav className="navbar navbar-expand-md fixed-top bg-light">
                     <div className="container-fluid">
                         <Link to="/" className="navbar-brand, textColor" >
-                            <img src={logoReact} alt="" /> Mintic 2022
+                            <img src={logoReact} alt="" /> Tu Doctor Online
                         </Link>
                         <button
                             className="navbar-toggler"
@@ -30,7 +32,7 @@ export const Nosotros = () => {
                                         Inicio
                                     </a>
                                 </li>
-                                
+
                                 <li className="nav-item, tm-link left">
                                     <Link to="/contacto">
                                         <a className="nav-link" href="/#">
@@ -96,56 +98,58 @@ export const Nosotros = () => {
 
 
 
-
             <div className="container marketing">
-            <div className="container-fluid">
+                <div className="pimg4">
 
-                {/**/}
-                <article className="flow">
-                    <h4>Nuestro Equipo de Desarrollo</h4>
-                    <p>Equipo multidisciplinario desarrollador de aplicaciones Web</p>
-                    Contamos con un buen equipo de trabajo con altas capacidades y desempeño,
-                    mejorando la productividad. Y, nos ayuda como negocio a alcanzar nuestros
-                    objetivos en un menor periodo de tiempo. Como equipo de trabajo, promovemos
-                    el aprendizaje y colaboración entre cada integrante. Mantenendo un buen ambiente
-                    laboral y trabajo en el bienestar de nuestros colaboradores. Ya que esto influye
-                    en nuestra productividad, desempeño y motivación.
-                    <div className="team">
-                        <ul className="auto-grid">
+                    {/**/}
+                    <article className="flow">
+                        <h4>Nuestro Equipo de Desarrollo</h4>
+                        <p>Patronicados por Misión TIC 2022, operador Universidad industrial de Santander</p>
+                        <div className="team">
+                            <ul className="auto-grid">
 
-                            <li>
-                                <a href="https://github.com/vlostman" className="profile" target="_blank" rel="noopener noreferrer">
-                                    <h2 className="profile__name">David</h2>
-                                    <p>Developer</p>
-                                    <img alt="Profile shot for Marc Dixon" src="https://avatars.githubusercontent.com/u/36352567?v=4" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://swop.link/cool" className="profile" target="_blank" rel="noopener noreferrer">
-                                    <h2 className="profile__name">Anonimo</h2>
-                                    <p>Developer</p>
-                                    <img alt="Profile shot for Marc Dixon" src="https://as01.epimg.net/epik/imagenes/2020/06/08/portada/1591619131_634844_1591619268_noticia_normal_recorte1.jpg" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://swop.link/cool" className="profile" target="_blank" rel="noopener noreferrer">
-                                    <h2 className="profile__name">Anonimo</h2>
-                                    <p>Developer</p>
-                                    <img alt="Profile shot for Marc Dixon" src="https://as01.epimg.net/epik/imagenes/2020/06/08/portada/1591619131_634844_1591619268_noticia_normal_recorte1.jpg" />
-                                </a>
-                            </li>
+                                <li>
+                                    <a href="https://github.com/vlostman" className="profile" target="_blank" rel="noopener noreferrer">
+                                        <h2 className="profile__name">David Munive</h2>
+                                        <p>Developer</p>
+                                        <img alt="Profile" src="https://avatars.githubusercontent.com/u/36352567?v=4"  />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/kellyflechas" className="profile" target="_blank" rel="noopener noreferrer">
+                                        <h2 className="profile__name">Kelly Ibarra Flechas</h2>
+                                        <p>Developer</p>
+                                        <img alt="Profile" src={avat1} />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/jeffrey20122021" className="profile" target="_blank" rel="noopener noreferrer">
+                                        <h2 className="profile__name">Jeffrey Jimenez</h2>
+                                        <p>Developer</p>
+                                        <img alt="Profile" src={avat2} />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://swop.link/cool" className="profile" target="_blank" rel="noopener noreferrer">
+                                        <h2 className="profile__name">Jaime Mantilla</h2>
+                                        <p>Developer</p>
+                                        <img alt="Profile" src="https://cdn.pixabay.com/photo/2021/07/02/04/48/user-6380868_960_720.png" />
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a href="https://swop.link/cool" className="profile" target="_blank" rel="noopener noreferrer">
-                                    <h2 className="profile__name">Anonimo</h2>
-                                    <p>Developer</p>
-                                    <img alt="Profile shot for Chad" src="https://as01.epimg.net/epik/imagenes/2020/06/08/portada/1591619131_634844_1591619268_noticia_normal_recorte1.jpg" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                {/**/}
+                                <li>
+                                    <a href="https://swop.link/cool" className="profile" target="_blank" rel="noopener noreferrer">
+                                        <h2 className="profile__name">Jesus Gutierrez</h2>
+                                        <p>Developer</p>
+                                        <img alt="Profile" src="https://cdn.pixabay.com/photo/2021/07/02/04/48/user-6380868_960_720.png" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    
+                    {/**/}
 
                 </div>
             </div>

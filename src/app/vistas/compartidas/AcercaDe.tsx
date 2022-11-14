@@ -1,5 +1,6 @@
 import fotoTripulante from "../../../assets/image/acercade.png";
 
+
 export const AcercaDe = () => {
     return (
         <main id="main" className="main">
@@ -20,7 +21,7 @@ export const AcercaDe = () => {
                     <div className="card">
                         <img src={fotoTripulante} className="" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">Chayanne emilio</h5>
+                            <h5 className="card-title">David Munive</h5>
                             <p className="card-text">Developer</p>
                             <p className="card-text">
                                 <small className="text-muted">...</small>
@@ -31,7 +32,7 @@ export const AcercaDe = () => {
                     <div className="card">
                         <img src={fotoTripulante} className="" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">Sonia Marga Blade</h5>
+                            <h5 className="card-title">Kelly Ibarra Flechas</h5>
                             <p className="card-text">Developer</p>
                             <p className="card-text">
                                 <small className="text-muted">...</small>
@@ -42,7 +43,7 @@ export const AcercaDe = () => {
                     <div className="card">
                         <img src={fotoTripulante} className="card-img-top" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">Yo no fui iba pasando</h5>
+                            <h5 className="card-title">Jeffrey Jimenez</h5>
                             <p className="card-text">Developer</p>
                             <p className="card-text">
                                 <small className="text-muted">...</small>
@@ -53,7 +54,7 @@ export const AcercaDe = () => {
                     <div className="card">
                         <img src={fotoTripulante} className="card-img-top" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">Curchinflais Node Js</h5>
+                            <h5 className="card-title">Jaime Mantilla</h5>
                             <p className="card-text">Developer</p>
                             <p className="card-text">
                                 <small className="text-muted">...</small>
@@ -64,7 +65,7 @@ export const AcercaDe = () => {
                     <div className="card">
                         <img src={fotoTripulante} className="card-img-top" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">Developer Fullstack</h5>
+                            <h5 className="card-title">Jesus Gütierrez</h5>
                             <p className="card-text">Developer</p>
                             <p className="card-text">
                                 <small className="text-muted">...</small>

@@ -7,6 +7,7 @@ import { RegistroSesion } from "../../vistas/publicas/RegistroSesion";
 import { NoEncontrado } from "../../vistas//compartidas/NoEncontrado";
 import { Nosotros } from "../../vistas/publicas/Nosotros";
 import { Contacto } from "../../vistas/publicas/Contacto";
+import { Odontologia } from "../../vistas/publicas/Odontologia";
 
 import { Vigilante } from "../../seguridad/Vigilante";
 import UsuarioSesion from "../../seguridad/UsuarioSesion";
@@ -19,6 +20,7 @@ const LazyRegistro = lazy(() => import("../../vistas//publicas/RegistroSesion").
 const LazyNoEncontrado = lazy(() => import("../../vistas//compartidas/NoEncontrado").then(() => ({ default: NoEncontrado, })));
 const LazyNosotros = lazy(() => import("../../vistas/publicas/Nosotros").then(() => ({ default: Nosotros, })));
 const LazyContacto = lazy(() => import("../../vistas/publicas/Contacto").then(() => ({ default: Contacto, })));
+const LazyOdontologia = lazy(() => import("../../vistas/publicas/Contacto").then(() => ({ default: Odontologia, })));
 
 const LazyTablero = lazy(() => import("../../contenedores/TableroPrincipal").then(() => ({ default: TableroPrincipal, })));
 
@@ -31,6 +33,7 @@ export const RuteoCompleto = () => {
                 <Route path="/register" element={<LazyRegistro />} />
                 <Route path="/nosotros" element={<LazyNosotros />} />
                 <Route path="/contacto" element={<LazyContacto />} />
+                <Route path="/odontologia" element={<LazyOdontologia />} />
 
                 <Route element={<Vigilante />}>
                     <Route path="/dashboard/*" element={<LazyTablero />} />

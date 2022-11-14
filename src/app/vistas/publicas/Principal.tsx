@@ -15,6 +15,9 @@ import fondo04 from "./../../../assets/image/fondo04.png";
 
 import icon1 from "./../../../assets/image/icon1.png";
 
+import avat1 from "./../../../assets/image/kelly.jpg";
+import avat2 from "./../../../assets/image/Jeffrey.jpg";
+
 export const Principal = () => {
   return (
     <div>
@@ -23,7 +26,7 @@ export const Principal = () => {
         <nav className="navbar navbar-expand-md fixed-top bg-light">
           <div className="container-fluid">
           <Link to="/" className="navbar-brand, textColor" >
-          <img src={logoReact} alt="" /> Mintic 2022
+          <img src={logoReact} alt="" /> Tu Doctor Online
           </Link>
             <button
               className="navbar-toggler"
@@ -68,9 +71,17 @@ export const Principal = () => {
                     Servicios
                   </a>
                   <ul className="dropdown-menu">
-                    <li>
+                  <li>
                       <a className="dropdown-item" href="/#">
-                        Medicina General
+                        Medicina Interna
+                      </a>
+                      </li>
+                    <li>
+                      
+                      <a className="dropdown-item" href="/#">
+                      <Link to="/odontologia">
+                        Odontologia
+                      </Link>
                       </a>
                     </li>
                   <li>
@@ -80,21 +91,28 @@ export const Principal = () => {
                     </li>
                     <li>
                       <a className="dropdown-item" href="/#">
+                        Medicina General
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/#">
                         Cirugia Estetica
                       </a>
                       {/* Menu dropdown improvisaado*/}
-                      <div className="dropdown-divider"></div>
+                      {/* <div className="dropdown-divider"></div>
                       <select className="form-select" aria-label="Default select example">
+
                           <option selected>Odontologia</option>
+
                           <option value="1">Ortodoncia</option>
                           <option value="2">Rehabilitacion Oral</option>
                           <option value="3">Cirugia Oral</option>
                           <option value="3">Endodoncia</option>
                           <option value="3">Odontopediatria</option>
-                      </select>
+                      </select> */}
                       {/* Menu dropdown improvisaado*/}
-
                     </li>
+                  
                   </ul>
                 </li>
                 </ul>
@@ -234,7 +252,6 @@ export const Principal = () => {
         {/* Carousel: Fin */}
 
 
-        
 
 
         {/* Cuerpo página principal: Inicio */}
@@ -365,29 +382,36 @@ registrarse de manera gratuita y acceder al sistema de solicitud de citas médic
       <a href="https://github.com/vlostman" className="profile" target="_blank" rel="noopener noreferrer">
           <h2 className="profile__name">David Munive</h2>
           <p>Developer</p>
-          <img alt="Profile shot for Marc Dixon" src="https://avatars.githubusercontent.com/u/36352567?v=4" />
+          <img alt="Profile" src="https://avatars.githubusercontent.com/u/36352567?v=4" />
+        </a>
+      </li>
+      <li>
+      <a href="https://github.com/kellyflechas" className="profile" target="_blank" rel="noopener noreferrer">
+          <h2 className="profile__name">Kelly Ibarra Flechas</h2>
+          <p>Developer</p>
+          <img alt="Profile" src={avat1} />
+        </a>
+      </li>
+      <li>
+      <a href="https://github.com/jeffrey20122021" className="profile" target="_blank" rel="noopener noreferrer">
+          <h2 className="profile__name">Jeffrey Jimenez</h2>
+          <p>Developer</p>
+          <img alt="Profile" src={avat2} />
         </a>
       </li>
       <li>
       <a href="https://swop.link/cool" className="profile" target="_blank" rel="noopener noreferrer">
-          <h2 className="profile__name">Anonimo</h2>
+          <h2 className="profile__name">Jaime Mantilla</h2>
           <p>Developer</p>
-          <img alt="Profile shot for Marc Dixon" src="https://as01.epimg.net/epik/imagenes/2020/06/08/portada/1591619131_634844_1591619268_noticia_normal_recorte1.jpg" />
-        </a>
-      </li>
-      <li>
-      <a href="https://swop.link/cool" className="profile" target="_blank" rel="noopener noreferrer">
-          <h2 className="profile__name">Anonimo</h2>
-          <p>Developer</p>
-          <img alt="Profile shot for Marc Dixon" src="https://as01.epimg.net/epik/imagenes/2020/06/08/portada/1591619131_634844_1591619268_noticia_normal_recorte1.jpg" />
+          <img alt="Profile" src="https://cdn.pixabay.com/photo/2021/07/02/04/48/user-6380868_960_720.png" />
         </a>
       </li>
       
       <li>
         <a href="https://swop.link/cool" className="profile" target="_blank" rel="noopener noreferrer">
-          <h2 className="profile__name">Anonimo</h2>
+          <h2 className="profile__name">Jesus Gutierrez</h2>
           <p>Developer</p>
-          <img alt="Profile shot for Chad" src="https://as01.epimg.net/epik/imagenes/2020/06/08/portada/1591619131_634844_1591619268_noticia_normal_recorte1.jpg" />
+          <img alt="Profile" src="https://cdn.pixabay.com/photo/2021/07/02/04/48/user-6380868_960_720.png" />
         </a>
       </li>
     </ul>
