@@ -203,13 +203,17 @@ export const MenuSuperior = () => {
                         </ul>
                     </li>
 
-                    <li className="nav-item dropdown pe-3">
+{/**/}
+
+
+<li className="nav-item dropdown pe-3">
                         <a
                             className="nav-link nav-profile d-flex align-items-center pe-0"
                             href="/#"
                             data-bs-toggle="dropdown"
                         >
-                            <img
+
+<img
                                 onError={({ currentTarget }) => {
                                     currentTarget.onerror = null;
                                     currentTarget.src = perfilUsu;
@@ -223,35 +227,58 @@ export const MenuSuperior = () => {
                             </span>
                         </a>
 
-                        <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                       
+
+                        <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
                             <li className="dropdown-header">
-                                <h6>Tripulante Misión TIC</h6>
-                                <span>Fullstack</span>
+                                Notificaciones
+                                <li>
+                                    <span className="badge rounded-pill bg-primary p-2 ms-2">
+                                        Ver Todos
+                                    </span>
+                                </li>
                             </li>
                             <li>
                                 <hr className="dropdown-divider" />
                             </li>
 
+                            <li className="message-item">
+                                <li>
+                                    <img
+                                        src="assets/img/messages-3.jpg"
+                                        alt=""
+                                        className="rounded-circle"
+                                    />
+                                    <div>
+                                        <h6>Usuario Registrado</h6>
+                                        <h6>Full Stack</h6>
+                                    </div>
+                                </li>
+                            </li>
+                            <li>
+                                <hr className="dropdown-divider" />
+                            </li>
                             <li>
                                 <a
+                                    href="/dashboard/about"
                                     className="dropdown-item d-flex align-items-center"
-                                    href="users-profile.html"
+
                                 >
                                     <i className="bi bi-person"></i>
-                                    <span>Mi perfil</span>
+                                    Mi Perfil
                                 </a>
                             </li>
                             <li>
                                 <hr className="dropdown-divider" />
                             </li>
-
                             <li>
                                 <a
+                                    href="/#"
                                     className="dropdown-item d-flex align-items-center"
-                                    href="users-profile.html"
+
                                 >
                                     <i className="bi bi-gear"></i>
-                                    <span>Configuración</span>
+                                    Configuracion
                                 </a>
                             </li>
                             <li>
@@ -270,6 +297,10 @@ export const MenuSuperior = () => {
                             </li>
                         </ul>
                     </li>
+
+
+{/**/}
+
                 </ul>
             </nav>
         </header>

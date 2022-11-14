@@ -91,7 +91,7 @@ export const InicioSesion = () => {
                       className="logo d-flex align-items-center w-auto"
                     >
                       <img src={logoReact} alt="" />
-                      <span className="d-none d-lg-block">Mintic 2022</span>
+                      <span className="d-none d-lg-block">Bienvenido/a</span>
                     </Link>
                   </div>
 
