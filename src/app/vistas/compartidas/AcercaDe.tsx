@@ -1,4 +1,5 @@
 import fotoTripulante from "../../../assets/image/acercade.png";
+import "./../../../assets/css/styles.css";
 
 
 export const AcercaDe = () => {
@@ -65,7 +66,7 @@ export const AcercaDe = () => {
                     <div className="card">
                         <img src={fotoTripulante} className="card-img-top" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">Jesus Gütierrez</h5>
+                            <h5 className="card-title">Jesus Gtierrez</h5>
                             <p className="card-text">Developer</p>
                             <p className="card-text">
                                 <small className="text-muted">...</small>
@@ -74,6 +75,13 @@ export const AcercaDe = () => {
                     </div>
                 </div>
             </div>
+
+            
+
+
+
+            
+
         </main>
     );
 };

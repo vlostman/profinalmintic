@@ -416,13 +416,21 @@ registrarse de manera gratuita y acceder al sistema de solicitud de citas médic
       </li>
     </ul>
   </div>
+
+  
 </article>
           {/**/}
-         
+
           </div>
           <hr className="featurette-divider" />
         </div>
+
         
+        
+
+        
+
+
         {/* 22*************************************************************** */}
 
 
@@ -434,22 +442,58 @@ registrarse de manera gratuita y acceder al sistema de solicitud de citas médic
         {/* Footer: Inicio */}
         {/* *************************************************************** */}
         <div>
-        <div className="pimg1">
-          <footer className="container">
-            <p className="float-end">
-              <a href="/#">
+        <a href="/#">
               <img src={icon1} alt=""/>
               </a>  
-              
-              
-            </p>
-            <h6 className="textColor">
-            <p>
-            Academic Free License v3.0<br />Creative Commons Attribution 4.0 cc<br />
-            </p>
-            </h6>
-          </footer>
+          <footer className="container">
+        <div className="container">
+        <div className="row">
+          <div className="col-sm-12 col-md-6">
+            <h6>Acerca del Proyecto</h6>
+            <p className="text-justify">Grupo <i>Mintic y sus Programas de educacion</i> son una iniciativa para ayudar a los futuros programadores. Se enfoca en proporcionar educacion y crear personas más eficientes, ya que el código requiere ser entendido de forma simple. Ayudaremos a los programadores a desarrollar conceptos en diferentes lenguajes de programación que incluyen C, C++, Java, HTML, CSS, Bootstrap, JavaScript, Android, SQL y Algorithm.</p>
+          </div>
+
+          <div className="col-xs-6 col-md-3">
+            <h6>Tecnologia Usada</h6>
+            <ul className="footer-links">
+              <li><a href="https://es.reactjs.org/">React</a></li>
+              <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScipt</a></li>
+              <li><a href="https://nodejs.org/en/">Nodejs</a></li>
+              <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></li>
+              <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>
+            </ul>
+          </div>
+
+          <div className="col-xs-6 col-md-3">
+            <h6>Links a la Pagina</h6>
+            <ul className="footer-links">
+              <li><a href="/about">Acerca de Nosotros</a></li>
+              <li><a href="/contacto">Contactanos</a></li>
+            </ul>
+          </div>
         </div>
+        
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8 col-sm-6 col-xs-12">
+            <p className="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+          <a href="/#">Grupo 10 - Tu Doctor Online</a>.
+            </p>
+          </div>
+
+          <div className="col-md-4 col-sm-6 col-xs-12">
+            <ul className="social-icons">
+              <li><a className="facebook" href="/#"><i className="fa fa-facebook"></i></a></li>
+              <li><a className="twitter" href="/#"><i className="fa fa-twitter"></i></a></li>
+              <li><a className="dribbble" href="/#"><i className="fa fa-dribbble"></i></a></li>
+              <li><a className="linkedin" href="/#"><i className="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+      </footer>
+
         {/* *************************************************************** */}
         {/* Footer: Fin */}
         </div>
