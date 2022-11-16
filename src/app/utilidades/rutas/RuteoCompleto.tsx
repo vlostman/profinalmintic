@@ -8,6 +8,9 @@ import { NoEncontrado } from "../../vistas//compartidas/NoEncontrado";
 import { Nosotros } from "../../vistas/publicas/Nosotros";
 import { Contacto } from "../../vistas/publicas/Contacto";
 import { Odontologia } from "../../vistas/publicas/Odontologia";
+import { Medicinageneral } from "../../vistas/publicas/Medicinageneral";
+import { Medicinainterna } from "../../vistas/publicas/Medicinainterna";
+import { Medicinaestetica } from "../../vistas/publicas/Medicinaestetica";
 
 import { Vigilante } from "../../seguridad/Vigilante";
 import UsuarioSesion from "../../seguridad/UsuarioSesion";
@@ -21,6 +24,10 @@ const LazyNoEncontrado = lazy(() => import("../../vistas//compartidas/NoEncontra
 const LazyNosotros = lazy(() => import("../../vistas/publicas/Nosotros").then(() => ({ default: Nosotros, })));
 const LazyContacto = lazy(() => import("../../vistas/publicas/Contacto").then(() => ({ default: Contacto, })));
 const LazyOdontologia = lazy(() => import("../../vistas/publicas/Contacto").then(() => ({ default: Odontologia, })));
+const LazyMedicinageneral = lazy(() => import("../../vistas/publicas/Medicinageneral").then(() => ({ default: Medicinageneral, })));
+const LazyMedicinainterna = lazy(() => import("../../vistas/publicas/Medicinainterna").then(() => ({ default: Medicinainterna, })));
+const LazyMedicinaestetica = lazy(() => import("../../vistas/publicas/Medicinaestetica").then(() => ({ default: Medicinaestetica, })));
+
 
 const LazyTablero = lazy(() => import("../../contenedores/TableroPrincipal").then(() => ({ default: TableroPrincipal, })));
 
@@ -34,6 +41,9 @@ export const RuteoCompleto = () => {
                 <Route path="/nosotros" element={<LazyNosotros />} />
                 <Route path="/contacto" element={<LazyContacto />} />
                 <Route path="/odontologia" element={<LazyOdontologia />} />
+                <Route path="/medicinageneral" element={<LazyMedicinageneral />} />
+                <Route path="/medicinainterna" element={<LazyMedicinainterna />} />
+                <Route path="/medicinaestetica" element={<LazyMedicinaestetica />} />
 
                 <Route element={<Vigilante />}>
                     <Route path="/dashboard/*" element={<LazyTablero />} />

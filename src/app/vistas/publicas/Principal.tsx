@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./../../../assets/css/portada.css";
 import "./../../../assets/css/carousel.css";
 
+
 import logoReact from "./../../../assets/image/logoReact.png";
 import quienesSomos from "./../../../assets/image/quienesSomos.png";
 import patrocinio from "./../../../assets/image/patrocinio.png";
@@ -71,11 +72,33 @@ export const Principal = () => {
                     Servicios
                   </a>
                   <ul className="dropdown-menu">
-                  <li>
+                    <li>
+                      
                       <a className="dropdown-item" href="/#">
-                        Medicina Interna
+                      <Link to="/medicinageneral">
+                        Medicina General
+                      </Link>
                       </a>
-                      </li>
+                    </li>
+
+                    <li>
+                      
+                      <a className="dropdown-item" href="/#">
+                      <Link to="/medicinainterna">
+                        Medicina Interna
+                      </Link>
+                      </a>
+                    </li>
+
+                    <li>
+                      
+                      <a className="dropdown-item" href="/#">
+                      <Link to="/medicinaestetica">
+                        Medicina estetica
+                      </Link>
+                      </a>
+                    </li>
+
                     <li>
                       
                       <a className="dropdown-item" href="/#">
@@ -84,35 +107,6 @@ export const Principal = () => {
                       </Link>
                       </a>
                     </li>
-                  <li>
-                      <a className="dropdown-item" href="/#">
-                        Medicina Interna
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/#">
-                        Medicina General
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/#">
-                        Cirugia Estetica
-                      </a>
-                      {/* Menu dropdown improvisaado*/}
-                      {/* <div className="dropdown-divider"></div>
-                      <select className="form-select" aria-label="Default select example">
-
-                          <option selected>Odontologia</option>
-
-                          <option value="1">Ortodoncia</option>
-                          <option value="2">Rehabilitacion Oral</option>
-                          <option value="3">Cirugia Oral</option>
-                          <option value="3">Endodoncia</option>
-                          <option value="3">Odontopediatria</option>
-                      </select> */}
-                      {/* Menu dropdown improvisaado*/}
-                    </li>
-                  
                   </ul>
                 </li>
                 </ul>
@@ -433,15 +427,12 @@ registrarse de manera gratuita y acceder al sistema de solicitud de citas médic
 
         {/* 22*************************************************************** */}
 
-
-
-
-
+ 
 
 
         {/* Footer: Inicio */}
         {/* *************************************************************** */}
-        <div>
+        <div className="mini-footer">
         <a href="/#">
               <img src={icon1} alt=""/>
               </a>  
@@ -496,7 +487,7 @@ registrarse de manera gratuita y acceder al sistema de solicitud de citas médic
 
         {/* *************************************************************** */}
         {/* Footer: Fin */}
-        </div>
+      </div>
       </main>
     </div>
   );

@@ -1,12 +1,13 @@
-import { Form, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./../../../assets/css/styles.css";
 import logoReact from "./../../../assets/image/logoReact.png";
+
 
 
 export const Contacto = () => {
     return (
         <main id="main" className="main">
-
+            {/* Barra de navegación: Inicio */}
             <header>
                 <nav className="navbar navbar-expand-md fixed-top bg-light">
                     <div className="container-fluid">
@@ -31,7 +32,6 @@ export const Contacto = () => {
                                         Inicio
                                     </a>
                                 </li>
-
                                 <li className="nav-item, tm-link left">
                                     <Link to="/contacto">
                                         <a className="nav-link" href="/#">
@@ -58,31 +58,39 @@ export const Contacto = () => {
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li>
-                                            <a className="dropdown-item" href="/#">
-                                                Medicina General
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item" href="/#">
-                                                Medicina Interna
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item" href="/#">
-                                                Cirugia Estetica
-                                            </a>
-                                            {/* Menu dropdown improvisaado*/}
-                                            <div className="dropdown-divider"></div>
-                                            <select className="form-select" aria-label="Default select example">
-                                                <option selected>Odontologia</option>
-                                                <option value="1">Ortodoncia</option>
-                                                <option value="2">Rehabilitacion Oral</option>
-                                                <option value="3">Cirugia Oral</option>
-                                                <option value="3">Endodoncia</option>
-                                                <option value="3">Odontopediatria</option>
-                                            </select>
-                                            {/* Menu dropdown improvisaado*/}
 
+                                            <a className="dropdown-item" href="/#">
+                                                <Link to="/medicinageneral">
+                                                    Medicina General
+                                                </Link>
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a className="dropdown-item" href="/#">
+                                                <Link to="/medicinainterna">
+                                                    Medicina Interna
+                                                </Link>
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a className="dropdown-item" href="/#">
+                                                <Link to="/medicinaestetica">
+                                                    Medicina estetica
+                                                </Link>
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a className="dropdown-item" href="/#">
+                                                <Link to="/odontologia">
+                                                    Odontologia
+                                                </Link>
+                                            </a>
                                         </li>
                                     </ul>
                                 </li>
@@ -94,15 +102,127 @@ export const Contacto = () => {
                     </div>
                 </nav>
             </header>
+            {/* Barra de navegación: Fin */}
+
+            {/* Inicio form */}
+            <section className="py-6">
+                <div className="container">
+                    <header className="mb-5">
+                        <h2 className="card-title pb-0 fs-4">Contáctanos</h2>
+                    </header>
+                    <div className="row">
+                        <div className="col-md-7 mb-5 mb-md-0">
+                            <form className="form" id="contact-form" method="post" action="contact.php">
+                                <div className="controls">
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <div className="mb-4">
+                                                <label className="form-label" htmlFor="name">Nombres*</label>
+                                                <input className="form-control" type="text" name="name" id="name" placeholder="Escriba sus nombres" required />
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-6">
+                                            <div className="mb-4">
+                                                <label className="form-label" htmlFor="surname">Apellidos*</label>
+                                                <input className="form-control" type="text" name="surname" id="surname" placeholder="Escriba sus apellidos" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="mb-4">
+                                        <label className="form-label" htmlFor="email">Email*</label>
+                                        <input className="form-control" type="email" name="email" id="email" placeholder="Escriba su correo" required />
+                                    </div>
+                                    <div className="mb-4">
+                                        <label className="form-label" htmlFor="message">PQR*</label>
+                                        <textarea className="form-control" name="message" id="message" placeholder="Escriba su mensaje" required></textarea>
+                                    </div>
+                                    <button className="btn btn-primary w-50" type="submit">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div className="col-md-5">
+                            <p className="text-muted">Estimado Paciente: es un orgullo para nosotros, que hagas parte de la gran familia tu doctor online. Nuestros servicios se ofrecen por cita previa, de lunes a viernes de 8:00 AM a 4:00 PM. Es importante que asista a su cita y si por alguna razón se ve precisado a cancelar, debe notificarlo por nuestros medios de contacto. </p>
+                            <p className="text-muted">Es un placer para nosostros brindarte el mejor servicio, estamos a tu disposicion las 24 horas del día, los 7 dás de la semana. </p>
+                            <div className="social">
+                                <ul className="list-inline">
+                                    <li className="list-inline-item"><a href="/#" target="_blank"><i className="fab fa-twitter"></i></a></li>
+                                    <li className="list-inline-item"><a href="/#" target="_blank"><i className="fab fa-facebook"></i></a></li>
+                                    <li className="list-inline-item"><a href="/#" target="_blank"><i className="fab fa-instagram"></i></a></li>
+                                    <li className="list-inline-item"><a href="/#" target="_blank"><i className="fab fa-pinterest"></i></a></li>
+                                    <li className="list-inline-item"><a href="/#" target="_blank"><i className="fab fa-vimeo"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
+            {/* fin de form */}
 
 
+            <div>
+          <hr className="featurette-divider" />
+        </div>
+
+            {/* 22*************************************************************** */}
 
 
+            {/* Footer: Inicio */}
+            {/* *************************************************************** */}
+            <div className="mini-footer">
+            <footer className="container">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-12 col-md-6">
+                                <h6>Acerca del Proyecto</h6>
+                                <p className="text-justify">Grupo <i>Mintic y sus Programas de educacion</i> son una iniciativa para ayudar a los futuros programadores. Se enfoca en proporcionar educacion y crear personas más eficientes, ya que el código requiere ser entendido de forma simple. Ayudaremos a los programadores a desarrollar conceptos en diferentes lenguajes de programación que incluyen C, C++, Java, HTML, CSS, Bootstrap, JavaScript, Android, SQL y Algorithm.</p>
+                            </div>
 
+                            <div className="col-xs-6 col-md-3">
+                                <h6>Tecnologia Usada</h6>
+                                <ul className="footer-links">
+                                    <li><a href="https://es.reactjs.org/">React</a></li>
+                                    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScipt</a></li>
+                                    <li><a href="https://nodejs.org/en/">Nodejs</a></li>
+                                    <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></li>
+                                    <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>
+                                </ul>
+                            </div>
+
+                            <div className="col-xs-6 col-md-3">
+                                <h6>Links a la Pagina</h6>
+                                <ul className="footer-links">
+                                    <li><a href="/nosotros">Acerca de Nosotros</a></li>
+                                    <li><a href="/contacto">Contactanos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-8 col-sm-6 col-xs-12">
+                                <p className="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+                                    <a href="/#"> Grupo 10 - Tu Doctor Online</a>.
+                                </p>
+                            </div>
+
+                            <div className="col-md-4 col-sm-6 col-xs-12">
+                                <ul className="social-icons">
+                                    <li><a className="facebook" href="/#"><i className="fab fa-facebook-f"></i></a></li>
+                                    <li><a className="twitter" href="/#"><i className="fab fa-twitter"></i></a></li>
+                                    <li><a className="dribbble" href="/#"><i className="fab fa-dribbble"></i></a></li>
+                                    <li><a className="linkedin" href="/#"><i className="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                {/* *************************************************************** */}
+                {/* Footer: Fin */}
+            </div>
         </main>
     );
 };
-
-

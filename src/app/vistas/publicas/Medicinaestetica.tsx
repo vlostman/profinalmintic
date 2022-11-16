@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import logoReact from "./../../../assets/image/logoReact.png";
-import "./../../../assets/css/we.css";
+import Lipo from "./../../../assets/image/lipo.jpg";
+import Botox from "./../../../assets/image/Botox.jpg";
+import "./../../../assets/css/catalog.css";
 
 
-export const Nosotros = () => {
+export const Medicinaestetica = () => {
     return (
         <main id="main" className="main">
 
@@ -104,46 +106,73 @@ export const Nosotros = () => {
             </header>
             {/* Barra de navegación: Fin */}
 
+            
+                <div className="catalogo">
 
+                <h2 className="card-title pb-0 fs-4">Medicina Estetica</h2>
 
-        <section className="about-section">
-        <div className="container">
-            <div className="row">                
-                <div className="content-column col-lg-6 col-md-12 col-sm-12 order-2">
-                    <div className="inner-column">
-                        <div className="sec-title">
-                            <span className="title">ACERCA DE NOSOTROS</span>
-                            <h2>Emprendimiento <p>Mintic/UIS 2022</p></h2>
-                        </div>
-                        <div className="text">Somos un grupo de emprendedores del area de programacion .</div>
-                        <ul className="list-style-one">
-                            <li>FrontEnd</li>
-                            <li>BackEnd</li>
-                            <li>FullStack</li>
-                        </ul>
-                        <div className="btn-box">
-                            <a href="/contacto" className="theme-btn btn-style-one">Contactanos</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="image-column col-lg-6 col-md-12 col-sm-12">
-                    <div className="inner-column wow fadeInLeft">
-                        <figure className="image-1"><a href="/#" className="lightbox-image" data-fancybox="images"><img alt="Pp1" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/03/programacion-javascript-2640901.jpg" /></a></figure>
-                        <figure className="image-2"><a href="/#" className="lightbox-image" data-fancybox="images"><img alt="pp2" src="https://lms.uis.edu.co/mintic2022/pluginfile.php/1/theme_edumy/headerlogo1/1663168415/MisionTIC-UIS.png"/></a></figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-                    
-
-    <div>
+                <div>
           <hr className="featurette-divider" />
         </div>
 
-                    {/* Footer: Inicio */}
+
+                    <div className="card">
+                        <img src={Lipo} alt="" />
+
+                        <div className="card-body">
+                            <h5 className="card-title">Liposucción</h5>
+                            <p className="card-text">
+                                La liposucción es un tipo de cirugía estética. Esta cirugía
+                                retira el exceso de grasa para mejorar la apariencia corporal
+                                y pulir los contornos corporales irregulares. Algunas veces,
+                                este procedimiento se denomina contorneado corporal. La
+                                liposucción puede servir para moldear las zonas por debajo del
+                                mentón, el cuello, los pómulos, la parte superior de los
+                                brazos, los senos, el abdomen, los glúteos, las caderas, los
+                                muslos, las rodillas, las pantorrillas y los tobillos.
+                            </p>
+                            <a href="/#" className="btn btn-primary" id="boton-catalogo">
+                                Más Informacion
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+          <hr className="featurette-divider" />
+        </div>
+
+                    <div className="card">
+                        <img src={Botox} alt="" />
+
+                        <div className="card-body">
+                            <h5 className="card-title">Botox</h5>
+
+
+
+                            <p className="card-text">
+                                La toxina botulínica, más conocida como botox (la marca
+                                del primer medicamento de este tipo que se comercializó), es
+                                en realidad la toxina que produce el botulismo. Sin embargo,
+                                se aprovecha su capacidad de producir parálisis muscular para
+                                utilizarla con fines médicos en el tratamiento de ciertas
+                                enfermedades neurológicas y en medicina estética para las
+                                arrugas de expresión, que es por lo que más se la conoce.
+                                Entre sus numerosas aplicaciones médicas destacan
+
+
+                            </p>
+                            <a href="/#" className="btn btn-primary" id="boton-catalogo">
+                                Más información
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+          <hr className="featurette-divider" />
+        </div>
+
+
+            {/* Footer: Inicio */}
             {/* *************************************************************** */}
             <div className="mini-footer">
             <footer className="container">
@@ -197,11 +226,23 @@ export const Nosotros = () => {
 </div>
                 {/* *************************************************************** */}
                 {/* Footer: Fin */}
-
-
-
         </main>
-                );
-    };
+    );
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
