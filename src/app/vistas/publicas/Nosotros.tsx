@@ -115,7 +115,12 @@ export const Nosotros = () => {
                             <span className="title">ACERCA DE NOSOTROS</span>
                             <h2>Emprendimiento <p>Mintic/UIS 2022</p></h2>
                         </div>
-                        <div className="text">Somos un grupo de emprendedores del area de programacion .</div>
+                        <div className="text">Somos un grupo de emprendedores del area de programacion,
+                         fielmente comprometidos con la visión de un mismo emprendimiento aplicando principios
+                          y competencias como por ejemplo: liderazgo, innovación, adaptación, etc. 
+                          Con estas ganas de adquirir capacidades y estar expuestos a constantes retos
+                          que beneficien nuestro crecimiento intelectual que como fijado principal tengamos
+                          las siguientes metas a desarrollo.</div>
                         <ul className="list-style-one">
                             <li>FrontEnd</li>
                             <li>BackEnd</li>

@@ -49,7 +49,7 @@ position: relative;
 display: block;
 font-size: 18px;
 line-height: 24px;
-color: #ff2222;
+color: #331df0;
 font-weight: 500;
 margin-bottom: 15px;
 }
@@ -100,7 +100,7 @@ position:relative;
 position:relative;
 font-size:16px;
 line-height:26px;
-color: #222222;
+color: #1320d4;
 font-weight:400;
 padding-left:35px;
 margin-bottom: 12px;
@@ -114,7 +114,7 @@ top: 0px;
 display: block;
 font-size: 18px;
 padding: 0px;
-color: #ff2222;
+color: #2124e9;
 font-weight: 600;
 -moz-font-smoothing: grayscale;
 -webkit-font-smoothing: antialiased;
@@ -139,7 +139,7 @@ padding: 10px 30px;
 font-weight: 600;
 overflow: hidden;
 letter-spacing: 0.02em;
-background-color: #ff2222;
+background-color: #202de9;
 }
 
 .btn-style-one:hover{

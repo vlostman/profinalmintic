@@ -7,7 +7,7 @@ export const Bienvenida = () => {
 			<div className="col-lg-11 mx-auto p-4 py-md-5">
 				<header className="d-flex align-items-center pb-3 mb-5 border-bottom">
 					<i
-						className="fa-solid fa-biohazard fa-2xl"
+						
 						style={{ color: "#bd080a" }}
 					></i>
 					<span className="fs-4">Bienvenido al sistema</span> 
