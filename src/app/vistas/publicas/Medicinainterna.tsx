@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import logoReact from "./../../../assets/image/logoReact.png";
+import "./../../../assets/css/medinterna.css";
 
 
 
@@ -79,8 +80,8 @@ export const Medicinainterna = () => {
                                             <li>
 
                                                 <a className="dropdown-item" href="/#">
-                                                    <Link to="/cirugiaestetica">
-                                                        Cirugia estetica
+                                                    <Link to="/medicinaestetica">
+                                                        Medicina estetica
                                                     </Link>
                                                 </a>
                                             </li>
@@ -104,6 +105,23 @@ export const Medicinainterna = () => {
                     </nav>
                 </header>
                 {/* Barra de navegación: Fin */}
+
+                <h3>
+                    <p className="container3">Medicina Interna</p>
+                </h3>
+                <img alt="mediimg" src="https://i0.wp.com/dimedinet.com/wp-content/uploads/2020/11/Dimedinet-Medicina_Interna-1.jpg?fit=900%2C501&ssl=1" className="container2" />
+                <h4>
+                    <div>
+                        <p className="container0">
+                            El especialista en Medicina Interna, brinda atención integral al
+                            paciente, enfocándose en la prevención, estudio, diagnóstico,
+                            tratamiento y rehabilitación de las enfermedades crónicas propias
+                            del adulto y de las condiciones agudas, que no requieren de una
+                            cirugía.
+                        </p>
+                    </div>
+                </h4>
+
             </main>
         </div>
     );

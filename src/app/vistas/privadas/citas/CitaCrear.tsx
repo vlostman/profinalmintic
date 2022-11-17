@@ -29,6 +29,7 @@ export const CitaCrear = () => {
   const miUsuario = useContext(ContextoUsuario);
   const correoUsuario = String(miUsuario?.autenticado.correo);
   const codUsuario = String(miUsuario?.autenticado.codUsuario);
+  
   // *******************************************************************
   
   
@@ -66,7 +67,7 @@ export const CitaCrear = () => {
   
   // Obtener los médicos para mostrar en el combo
   const obtenerMedicos = async () => {
-    const urlMedicos = ApiBack.USUARIOS_OBTENER + "/63682c4240f3cbc1cb481082";
+    const urlMedicos = ApiBack.USUARIOS_OBTENER + "/63717dae3bf491464d65959b";
     const resultado = await ServicioPrivado.peticionGET(urlMedicos);
     setArregloMedicos(resultado);
 
@@ -136,7 +137,8 @@ export const CitaCrear = () => {
 
     return (
       <main id="main" className="main">
-        {/* Navegación estilo breadcrumb: Inicio */}
+
+      {/* Navegación estilo breadcrumb: Inicio */}
       <div className="pagetitle">
         <h1>Citas</h1>
         <nav>
@@ -150,8 +152,8 @@ export const CitaCrear = () => {
       </div>
       {/* Navegación estilo breadcrumb: Fin */}
 
-      {/* Ejemplo de formulario: Inicio */}
-      <div className="col-lg-12">
+            {/* Ejemplo de formulario: Inicio */}
+            <div className="col-lg-12">
         {cargaFinalizada ? (
           <div className="card">
             <div className="card-body">
@@ -234,13 +236,7 @@ export const CitaCrear = () => {
                       ]}
                       id="fechaCita"
                     />
-                  </div> 
-
-{/* 
-                  //Style prueba
-                  <div class="calendly-inline-widget" data-url="https://calendly.com/jimenezjeffrey/30min" style={{min-width:320px;height:630px;}}></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
- ///////////////////////////////// */}
+                  </div>
                 </div>
 
                 <Form.Group as={Row} className="mb-3">
@@ -256,7 +252,6 @@ export const CitaCrear = () => {
         )}
       </div>
       {/* Ejemplo de formulario: Inicio */}
-
       {/* Requerido para presentar los mensajes Toast: Inicio */}
       <ToastContainer />
       {/* Requerido para presentar los mensajes Toast: Fin */}

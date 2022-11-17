@@ -62,7 +62,7 @@ export const CitaListado = () => {
             <li className="breadcrumb-item">
               <a href="index.html">Inicio</a>
             </li>
-            <li className="breadcrumb-item active">Listado de perfiles</li>
+            <li className="breadcrumb-item active">Listado de Citas</li>
           </ol>
         </nav>
       </div>
