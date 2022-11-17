@@ -1,20 +1,21 @@
+import "./../../assets/css/welcome.css";
 
 
 
 export const Bienvenida = () => {
-	return (
-		<main id="main" className="main">
-			<div className="col-lg-11 mx-auto p-4 py-md-5">
-				<header className="d-flex align-items-center pb-3 mb-5 border-bottom">
-					<i
-						
-						style={{ color: "#bd080a" }}
-					></i>
-					<span className="fs-4">Bienvenido al sistema</span> 
-				</header>
+    return (
+        <main id="main" className="main">
+            <div className="col-lg-11 mx-auto p-4 py-md-5">
+                <header className="d-flex align-items-center pb-3 mb-5 border-bottom">
+                    {/* <i
 
-				<main>
-					{/* <h1>Plantilla para desarrollo Fullstack</h1>
+                        style={{ color: "#bd080a" }}
+                    ></i>
+                    <span className="fs-4">Bienvenido al sistema</span> */}
+                </header>
+
+                <main>
+                    {/* <h1>Plantilla para desarrollo Fullstack</h1>
                     <p className="fs-5">
                         Esta plantilla está basada en NiceAdmin, utiliza Bootstrap 5.2.2 lo
                         cual la convierte en una plantilla actual para realizar desarrollos
@@ -66,12 +67,15 @@ export const Bienvenida = () => {
                     </div>  */}
 
 
+                    <div className="center">
+                        <h1 className="est">Bienvenido</h1>
+                        <div className="btn"><h4>Adelante</h4></div>
+                    </div>
 
 
 
-
-				</main>
-			</div>
-		</main>
-	);
+                </main>
+            </div>
+        </main>
+    );
 };
