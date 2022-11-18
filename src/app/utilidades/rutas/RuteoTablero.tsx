@@ -19,6 +19,8 @@ import { UsuarioActual } from "../../vistas/privadas/usuarios/UsuarioActual";
 
 import { CitaCrear } from "../../vistas/privadas/citas/CitaCrear";
 import { CitaListado } from "../../vistas/privadas/citas/CitaListado";
+import { CitaAdmin } from "../../vistas/privadas/citas/CitaAdmin";
+import { CitaActual } from "../../vistas/privadas/citas/CitaActual";
 
 // Carga Lazy - Supenso
 // ***********************************************************************************************
@@ -52,6 +54,8 @@ const LazyUsuarioActual = lazy(() => import("../../vistas/privadas/usuarios/Usua
 
 const LazyCitaCrear = lazy(() => import("../../vistas/privadas/citas/CitaCrear").then(() => ({ default: CitaCrear })));
 const LazyCitaListado = lazy(() => import("../../vistas/privadas/citas/CitaListado").then(() => ({ default: CitaListado })));
+const LazyCitaAdmin = lazy(() => import("../../vistas/privadas/citas/CitaAdmin").then(() => ({ default: CitaAdmin })));
+const LazyCitaActual = lazy(() => import("../../vistas/privadas/citas/CitaActual").then(() => ({ default: CitaActual })));
 
 export const RuteoTablero = () => {
     return (
@@ -73,6 +77,8 @@ export const RuteoTablero = () => {
 
                 <Route path="/addma" element={<LazyCitaCrear />} />
                 <Route path="/listma" element={<LazyCitaListado />} />
+                <Route path="/admma" element={<LazyCitaAdmin />} />
+                <Route path="/updatecita/:codigo" element={<LazyCitaActual />} />
 
                 <Route path="*" element={<RecursoNoEncontrado />} />
             </Routes>

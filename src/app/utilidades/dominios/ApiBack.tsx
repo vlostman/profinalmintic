@@ -21,6 +21,8 @@ const ApiBack = {
 
   CITAS_CREAR: "/api/privada/cita/crear",
   CITAS_OBTENER: "/api/privada/cita/todos",
+  CITAS_ELIMINAR:"/api/privada/cita/eliminar",
+  CITAS_ACTUALIZAR:"/api/privada/cita/actualizar",
 };
 
 export default ApiBack;

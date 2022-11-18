@@ -16,7 +16,7 @@
     pointer-events: none;
 }
 
-.center {
+.centero {
     position: absolute;
     margin: auto;
     top: 0;
@@ -27,7 +27,7 @@
     height: 50%;
 }
 
-.btn {
+.btno {
     margin: 0 auto;
     width: 170px;
     height: 60px;
@@ -52,7 +52,7 @@
     cursor: pointer;
 }
 
-.btn:hover {
+.btno:hover {
     background: #66fcf1;
     color: #10151B;
 }

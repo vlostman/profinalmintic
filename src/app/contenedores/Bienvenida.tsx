@@ -67,9 +67,9 @@ export const Bienvenida = () => {
                     </div>  */}
 
 
-                    <div className="center">
+                    <div className="centero">
                         <h1 className="est">Bienvenido</h1>
-                        <div className="btn"><h4>Adelante</h4></div>
+                        <div className="btno"><h4>Adelante</h4></div>
                     </div>
 
 
