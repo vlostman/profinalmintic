@@ -36,14 +36,14 @@ export const Odontologia = () => {
                                 </li>
                                 <li className="nav-item, tm-link left">
                                     <Link to="/contacto">
-                                        <a className="nav-link" href="/#">
+                                        <a className="nav-link" href="/contacto">
                                             Contactanos
                                         </a>
                                     </Link>
                                 </li>
                                 <li className="nav-item, tm-link left">
                                     <Link to="/nosotros">
-                                        <a className="nav-link" href="/about">
+                                        <a className="nav-link" href="/nosotros">
                                             Nosotros
                                         </a>
                                     </Link>

@@ -1,34 +1,28 @@
 import { Link } from "react-router-dom";
-
 import "./../../../assets/css/portada.css";
 import "./../../../assets/css/carousel.css";
 
 
+
 import logoReact from "./../../../assets/image/logoReact.png";
-import quienesSomos from "./../../../assets/image/quienesSomos.png";
-import patrocinio from "./../../../assets/image/patrocinio.png";
-import tecnologias from "./../../../assets/image/tecnologias.png";
-
-import fondo01 from "./../../../assets/image/fondo01.png";
-import fondo02 from "./../../../assets/image/fondo02.png";
-import fondo03 from "./../../../assets/image/fondo03.png";
-import fondo04 from "./../../../assets/image/fondo04.png";
-
-import icon1 from "./../../../assets/image/icon1.png";
-
 import avat1 from "./../../../assets/image/kelly.jpg";
 import avat2 from "./../../../assets/image/Jeffrey.jpg";
+
+
+
 
 export const Principal = () => {
   return (
     <div>
       {/* Barra de navegación: Inicio */}
+
+      <script src="./../../../assets/css/style2.js" type="text/javascript" />
       <header>
-        <nav className="navbar navbar-expand-md fixed-top bg-light">
+        {/* <nav className="navbar navbar-expand-md fixed-top bg-light">
           <div className="container-fluid">
-          <Link to="/" className="navbar-brand, textColor" >
-          <img src={logoReact} alt="" /> Tu Doctor Online
-          </Link>
+            <Link to="/" className="navbar-brand, textColor" >
+              <img src={logoReact} alt="" /> Tu Doctor Online
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -48,18 +42,18 @@ export const Principal = () => {
                   </a>
                 </li>
                 <li className="nav-item, tm-link left">
-                <Link to="/contacto">
-                  <a className="nav-link" href="/#">
-                    Contactanos
-                  </a>
+                  <Link to="/contacto">
+                    <a className="nav-link" href="/contacto">
+                      Contactanos
+                    </a>
                   </Link>
                 </li>
                 <li className="nav-item, tm-link left">
-                <Link to="/nosotros">
-                  <a className="nav-link" href="/about">
-                    Nosotros
-                  </a>
-                </Link>
+                  <Link to="/nosotros">
+                    <a className="nav-link" href="/nosotros">
+                      Nosotros
+                    </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown, tm-link left">
                   <a
@@ -73,421 +67,343 @@ export const Principal = () => {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      
+
                       <a className="dropdown-item" href="/#">
-                      <Link to="/medicinageneral">
-                        Medicina General
-                      </Link>
+                        <Link to="/medicinageneral">
+                          Medicina General
+                        </Link>
                       </a>
                     </li>
 
                     <li>
-                      
+
                       <a className="dropdown-item" href="/#">
-                      <Link to="/medicinainterna">
-                        Medicina Interna
-                      </Link>
+                        <Link to="/medicinainterna">
+                          Medicina Interna
+                        </Link>
                       </a>
                     </li>
 
                     <li>
-                      
+
                       <a className="dropdown-item" href="/#">
-                      <Link to="/medicinaestetica">
-                        Medicina estetica
-                      </Link>
+                        <Link to="/medicinaestetica">
+                          Medicina estetica
+                        </Link>
                       </a>
                     </li>
 
                     <li>
-                      
+
                       <a className="dropdown-item" href="/#">
-                      <Link to="/odontologia">
-                        Odontologia
-                      </Link>
+                        <Link to="/odontologia">
+                          Odontologia
+                        </Link>
                       </a>
                     </li>
                   </ul>
                 </li>
-                </ul>
+              </ul>
               <Link to="/login">
-              <span className="navbar-text">Iniciar Sesion</span>
+                <span className="navbar-text">Iniciar Sesion</span>
               </Link>
             </div>
           </div>
-        </nav>
+        </nav> */}
+
+<nav>
+		<ul className="mcd-menu">
+			<li>
+				<a href="">
+					<i className="bi bi-house"></i>
+					<strong>Inicio</strong>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i className="bi bi-person"></i>
+					<strong>Nosotros</strong>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i className="bi bi-telephone"></i>
+					<strong>Contacto</strong>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i className="bi bi-newspaper"></i>
+					<strong>Noticias</strong>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i className="bi bi-inboxes"></i>
+					<strong>Servicios</strong>
+				</a>
+				<ul>
+					<li><a href="/#"><i className="fa fa-globe"></i>Medicina General</a></li>
+					<li>
+						<a href="/#"><i className="fa fa-group"></i>Nuestro Equipo</a>
+						<ul>
+							<li><a href="/#"><i className="fa fa-male"></i>David Munive</a></li>
+							<li>
+								<a href="/#"><i className="fa fa-female"></i>Kelly Ibarra Flechas</a>
+								<ul>
+									<li><a href="/#"><i className="fa fa-leaf"></i>-</a></li>
+									<li><a href="/#"><i className="fa fa-tasks"></i>-</a></li>
+								</ul>
+							</li>
+							<li><a href="/#"><i className="fa fa-male"></i>Jeffrey Jimenez</a></li>
+              <li><a href="/#"><i className="fa fa-male"></i>Jaime Mantilla</a></li>
+						</ul>
+					</li>
+					<li><a href="/#"><i className="fa fa-trophy"></i>Rewards</a></li>
+					<li><a href="/#"><i className="fa fa-certificate"></i>Certificates</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">
+					<i className="bi bi-calendar3"></i>
+					<strong>Calendario</strong>
+				</a>
+			</li>
+			<li>
+				<a href="/login">
+					<i className="bi bi-fingerprint"></i>
+					<strong>Inicio de Sesion</strong>
+				</a>
+			</li>
+			<li className="float">
+				<a className="search">
+					<input type="text" value="Busqueda ..."/>
+					<button><i className="fa fa-search"></i></button>
+				</a>
+				<a href="" className="search-mobile">
+					<i className="fa fa-search"></i>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+
       </header>
       {/* Barra de navegación: Fin */}
 
       <main>
-        {/* Carousel: Inicio */}
-        {/* *************************************************************** */}
-        <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-              className=""
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-              className=""
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-              className=""
-            ></button>
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src={fondo01} alt="" />
-              <div className="container">
-                <div className="carousel-caption">
-                  <h1>Medicina General</h1>
-                  <p>Atencion Integral a la mano</p>
-                  <p>
-                    <a className="btn btn-sm btn-primary" href="/login">
-                      Entrar
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="carousel-item">
-              <img src={fondo02} alt="" />
-              <div className="container">
-                <div className="carousel-caption text-end">
-                  <h1>Medicina especializada</h1>
-                  <p>Tu vida es lo primero</p>
-                  <p>
-                    <a className="btn btn-sm btn-primary" href="/login">
-                      Entrar
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="carousel-item">
-              <img src={fondo03} alt="" />
-              <div className="container">
-                <div className="carousel-caption text-start">
-                  <h1>Somos</h1>
-                  <p>Aliados para proteger la salud de nuestros usuarios</p>
-                  <p>
-                    <a className="btn btn-sm btn-primary" href="/login">
-                      Entrar
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="carousel-item">
-              <img src={fondo04} alt="" />
-              <div className="container">
-                <div className="carousel-caption text-start">
-                  <h1>Mesa de ayuda</h1>
-                  <p>Estamos para ayudarte</p>
-                  <p>
-                    <a className="btn btn-sm btn-primary" href="/login">
-                      Entrar
-                    </a>
-                  </p>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-        {/* *************************************************************** */}
-        {/* Carousel: Fin */}
-
-
-
-
         {/* Cuerpo página principal: Inicio */}
         {/* *************************************************************** */}
-        <div className="container marketing">
-        <div className="pimg2">
-          <div className="row">
-            <div className="col-lg-4">
-              <img
-                src={quienesSomos}
-                className="bd-placeholder-img rounded-circle"
-                alt=""
-                style={{width: "100px", height: "auto"}}
-              />
 
-              <h2 className="fw-normal">¿Quienes somos?</h2>
-              <p>Equipo multidisciplinario desarrollador de aplicaciones Web</p>
-              <p>
-                <a className="btn btn-secondary" href="/#">
-                  Más detalles
-                </a>
-              </p>
-            </div>
-            <div className="col-lg-4">
-              <img
-                src={patrocinio}
-                className="bd-placeholder-img rounded-circle"
-                alt=""
-                style={{width: "145px", height: "auto"}}
-              />
-
-              <h2 className="fw-normal">¿Nuestro patrocinio?</h2>
-              <p>
-                Patronicados por Misión TIC 2022, operador Universidad industrial de Santander
-              </p>
-              <p>
-                <a className="btn btn-secondary" href="/#">
-                  Más detalles
-                </a>
-              </p>
-            </div>
-            <div className="col-lg-4">
-            <img
-                src={tecnologias}
-                className="bd-placeholder-img rounded-circle"
-                alt=""
-                style={{width: "170px", height: "auto"}}
-              />
-              <h2 className="fw-normal">¿Tecnologías?</h2>
-              <p>
-                Desarrollo de aplicaciones Web: Mongo, Express, React y Node
-              </p>
-              <p>
-                <a className="btn btn-secondary" href="/#">
-                  Más detalles
-                </a>
-              </p>
-            </div>
-            </div>
-          </div>
-
-          <hr className="featurette-divider" />
-        </div>
-        
-        {/* *************************************************************** */}
-        {/* Cuerpo página principal: Fin */}
-
-        {/* 22*************************************************************** */}
-        <div className="container marketing">
-        <div className="pimg1">
-          
-          {/**/}
-
-<div id="container">
-		<div className="product-details">
-		<span className="hint free-shipping">Descripcion de Proyecto<p>TuDoctorOnline</p></span>
-	<span className="hint-star star">
-		<i className="fa fa-star" aria-hidden="true"></i>
-		<i className="fa fa-star" aria-hidden="true"></i>
-		<i className="fa fa-star" aria-hidden="true"></i>
-    <i className="fa fa-star" aria-hidden="true"></i>
-    <i className="fa fa-star" aria-hidden="true"></i>
-		<i className="fa fa-star-half-o" aria-hidden="true"></i>
-		<i className="fa fa-star-o" aria-hidden="true"></i>
-	</span>
-  
-		<p className="information">" TuDoctorOnline es una plataforma para el agendamiento de servicios médicos, permite a los usuarios
-registrarse de manera gratuita y acceder al sistema de solicitud de citas médicas."</p>
-<div className="control">
-</div>
-</div>
-<div className="product-image">
-<div className="info">
-<li></li>
-	<ul>
-    <li><strong>Descripcion Tecnica</strong></li>
-		<li><strong>Modulo: Desarrollo de Software U16. </strong>©2022</li>
-		<li><strong>Grupo asignado: </strong>Grupo 10</li>
-		<li><strong>Formador: : </strong>Carlos Andres Gutierrez</li>
-		<li><strong>Tutor: </strong>Deiver Guerra</li>
-		</ul>
-</div>
-</div>
-</div>
+{/* Banner Inicio*/}
+{/* *************************************************************** */}
+<section>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"/>
 
 
-          {/**/}
-         
-          </div>
-          <hr className="featurette-divider" />
-        </div>
-        
-        {/* 22*************************************************************** */}
+<div id="content-slider">
+  <div className="slider-wrap"> 
+    <input type="radio" id="input-1" name="i" />         
+    <input type="radio" id="input-2" name="i" />         
+    <input type="radio" id="input-3" name="i" />
+    <input type="radio" id="input-4" name="i" />
 
-
-        {/* 22*************************************************************** */}
-        <div className="container marketing">
-        <div className="pimg4">
-          
-          {/**/}
-          <article className="flow">
-  <h4>Nuestro Equipo de Desarrollo</h4>
-  <p>Patronicados por Misión TIC 2022, operador Universidad industrial de Santander</p>
-  <div className="team">
-    <ul className="auto-grid">
-      
-      <li>
-      <a href="https://github.com/vlostman" className="profile" target="_blank" rel="noopener noreferrer">
-          <h2 className="profile__name">David Munive</h2>
-          <p>Developer</p>
-          <img alt="Profile" src="https://avatars.githubusercontent.com/u/36352567?v=4" />
-        </a>
-      </li>
-      <li>
-      <a href="https://github.com/kellyflechas" className="profile" target="_blank" rel="noopener noreferrer">
-          <h2 className="profile__name">Kelly Ibarra Flechas</h2>
-          <p>Developer</p>
-          <img alt="Profile" src={avat1} />
-        </a>
-      </li>
-      <li>
-      <a href="https://github.com/jeffrey20122021" className="profile" target="_blank" rel="noopener noreferrer">
-          <h2 className="profile__name">Jeffrey Jimenez</h2>
-          <p>Developer</p>
-          <img alt="Profile" src={avat2} />
-        </a>
-      </li>
-      <li>
-      <a href="https://swop.link/cool" className="profile" target="_blank" rel="noopener noreferrer">
-          <h2 className="profile__name">Jaime Mantilla</h2>
-          <p>Developer</p>
-          <img alt="Profile" src="https://cdn.pixabay.com/photo/2021/07/02/04/48/user-6380868_960_720.png" />
-        </a>
-      </li>
-      
-      <li>
-        <a href="https://swop.link/cool" className="profile" target="_blank" rel="noopener noreferrer">
-          <h2 className="profile__name">Jesus Gutierrez</h2>
-          <p>Developer</p>
-          <img alt="Profile" src="https://cdn.pixabay.com/photo/2021/07/02/04/48/user-6380868_960_720.png" />
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  
-</article>
-          {/**/}
-
-          </div>
-          <hr className="featurette-divider" />
-        </div>
-
-        
-        
-
-        
-
-
-        {/* 22*************************************************************** */}
+    <nav className="slider-dot-control">
+      <label htmlFor="input-1" className="slider-dot"></label>
+      <label htmlFor="input-2" className="slider-dot"></label>
+      <label htmlFor="input-3" className="slider-dot"></label>
+      <label htmlFor="input-4" className="slider-dot"></label>
+    </nav>
 
  
+    <nav className="slider-arrow-control">
+      <label htmlFor="input-1"></label>
+      <label htmlFor="input-2"></label>
+      <label htmlFor="input-3"></label>
+      <label htmlFor="input-4"></label>
+    </nav>
+
+    <div className="slider">
+      <div className="slider-inner">
+
+        <figure>
+          <figcaption className="slider-head">
+            <h2>Atencion Inmediata</h2>
+            <p>En cualquier momento</p>
+            <a href="/#"></a>
+          </figcaption>
+          <img src="https://medic.freit.io/img/header%20image.png" alt="" id="i-1" className="slider-img"/>
+        </figure>
+
+        <figure>
+          <figcaption className="slider-head">
+            <h2>Servicios Disponibles</h2>
+            <p>Multitud de areas</p>
+            <a href="/#"></a>
+          </figcaption>
+          <img src="https://st2.depositphotos.com/1177973/7301/i/600/depositphotos_73012877-stock-photo-doctor-with-stethoscope-in-hospital.jpg" alt="" id="i-2" className="slider-img"/>
+        </figure>
+
+        <figure>
+          <figcaption className="slider-head">
+            <h2>Calidad de Atencion</h2> 
+            <p>Costos comodos</p>
+            <a href="/#"></a>
+          </figcaption>
+          <img src="https://st2.depositphotos.com/1000144/6901/i/600/depositphotos_69014957-stock-photo-blood-pressure-monitor-clipboard-and.jpg" alt="" id="i-3" className="slider-img"/>
+        </figure>
+
+        <figure>
+          <figcaption className="slider-head">
+            <h2>Informacion Oportuna</h2>
+            <p>Siempre al dia</p>
+            <a href="/#"></a>
+          </figcaption>
+          <img src="https://t4.ftcdn.net/jpg/03/25/07/11/360_F_325071193_ZD5XK2bsJBD2S1lyOUuIpyVYl2w5troJ.jpg" alt="" id="i-4" className="slider-img"/>
+        </figure>
+
+
+        <figure>
+          <figcaption className="slider-head">
+            <h2>Stearman PT-17</h2>
+            <p>Lorem ipsum dolor.</p>
+            <a href="#">read more...</a>
+          </figcaption>
+          <img src="https://images.unsplash.com/photo-1563782414411-b05969e9ebd4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" alt="" id="i-5" className="slider-img"/>
+        </figure>               
+      </div>
+    </div>                  
+
+  </div>        
+</div>
+
+</section>
+
+{/* Banner FIn*/}
+{/* *************************************************************** */}
+
+{/* *************************************************************** */}
+{/* CInformacion Inicio */}        
+
+        <section className="py-2 mt-3"  id="menu">
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <p className="h2 font-weight-light s-size text-center p-1">
+                            BLOG INFORMATIVO
+                        </p>
+                        <p className="lead text-center">Primeras Noticias</p><hr className="bg-dark"/>
+                    </div>
+                </div>
+                </div>
+
+
+                <div id="mainbox">
+<div className="card">
+  <img className="img1" src="http://media.npr.org/assets/news/2009/10/27/facebook1_sq-17f6f5e06d5742d8c53576f7c13d5cf7158202a9.jpg?s=16" alt="" />
+  <h1>Noticia 1</h1>
+  <p>Casos de Viruela de Mono se intensifica en Colombia</p>
+</div>
+<div className="card">
+  <img className="img1" src="http://media.npr.org/assets/news/2009/10/27/facebook1_sq-17f6f5e06d5742d8c53576f7c13d5cf7158202a9.jpg?s=16" alt="" />
+  <h1>Noticia 2</h1>
+  <p>Nuevo pico de Covid-19 en Colombia, otra ves a usar mascara?</p>
+</div>
+<div className="card">
+  <img className="img1" src="http://media.npr.org/assets/news/2009/10/27/facebook1_sq-17f6f5e06d5742d8c53576f7c13d5cf7158202a9.jpg?s=16" alt="" />
+  <h1>Noticia 3</h1>
+  <p>Posibles nueva vacucaion masiva</p>
+</div>
+</div>
+                
+
+        </section>
+        {/* Informacion Fin */}
+        {/* *************************************************************** */}
+
+
+        {/* *************************************************************** */}
+        {/* Formulario de Contacto: Inicio */}
+        <section id="service" className="mt-3 py-2 bg-dark text-white">
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <p className="h2 font-weight-light s-size text-center p-1">
+                            <i className="bi bi-telephone"></i> CONTACTANOS
+                        </p>
+                        <p className="lead text-center">Danos Tu Opinion</p><hr className="bg-light"/>
+                    </div>
+                </div>
+                <div className="row py-1">
+                    <div className="col-md-6 mb-2">
+                        <form>
+                            <div className="form-group">
+                                <label htmlFor="name">Nombres</label>
+                                <input type="text" className="form-control" placeholder="Nombres"/>
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="email">Email</label>
+                                <input type="email" className="form-control" placeholder="Email"/>
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="number">Contacto</label>
+                                <input type="text" className="form-control" placeholder="Su Numero de Contacto"/>
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="details">Mensaje</label>
+                                <textarea  id=""  className="form-control" placeholder="Escriba su mensaje aqui."></textarea>
+                            </div>
+                            <button className="btn btn-outline-light btn-block"><i className="far fa-paper-plane"></i> Enviar</button>
+                        </form>
+                    </div>
+                    <div className="col-md-6 mb-2 pt-4 d-none d-md-block">
+                        <div className="card">
+                            <img src="https://definicion.de/wp-content/uploads/2010/07/contacto-1.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {/* *************************************************************** */}
+        {/* Formulario de Contacto: Fin */}
 
 
         {/* Footer: Inicio */}
         {/* *************************************************************** */}
-        <div className="mini-footer">
-        <a href="/#">
-              <img src={icon1} alt=""/>
-              </a>  
-          <footer className="container">
-        <div className="container">
-        <div className="row">
-          <div className="col-sm-12 col-md-6">
-            <h6>Acerca del Proyecto</h6>
-            <p className="text-justify">Grupo <i>Mintic y sus Programas de educacion</i> son una iniciativa para ayudar a los futuros programadores. Se enfoca en proporcionar educacion y crear personas más eficientes, ya que el código requiere ser entendido de forma simple. Ayudaremos a los programadores a desarrollar conceptos en diferentes lenguajes de programación que incluyen C, C++, Java, HTML, CSS, Bootstrap, JavaScript, Android, SQL y Algorithm.</p>
-          </div>
 
-          <div className="col-xs-6 col-md-3">
-            <h6>Tecnologia Usada</h6>
-            <ul className="footer-links">
-              <li><a href="https://es.reactjs.org/">React</a></li>
-              <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScipt</a></li>
-              <li><a href="https://nodejs.org/en/">Nodejs</a></li>
-              <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></li>
-              <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>
+        <footer className="footer">
+          <div className="container">
+            <ul className="list-inline mb-0 text-center">
+              <li>
+                <Link to="/nosotros">
+                  Copyright 2022 All Rights Reserved by Desarrollo de Software Mintic/UIS - U16/Grupo 10 - Tu Doctor Online
+                </Link>
+              </li>
+              <li className="list-inline-item">
+                <a href="/#"><span className="fab fa-twitter"></span></a>
+              </li>
+
+              <li className="list-inline-item">
+                <a href="/#"><span className="fab fa-dribbble"></span></a>
+              </li>
+
+              <li className="list-inline-item">
+                <a href="/#"><span className="fab fa-facebook-f"></span></a>
+              </li>
+
+              <li className="list-inline-item">
+                <a href="/#"><span className="fab fa-linkedin-in"></span></a>
+              </li>
             </ul>
           </div>
-
-          <div className="col-xs-6 col-md-3">
-            <h6>Links a la Pagina</h6>
-            <ul className="footer-links">
-              <li><a href="/nosotros">Acerca de Nosotros</a></li>
-              <li><a href="/contacto">Contactanos</a></li>
-            </ul>
-          </div>
-        </div>
-        
-      </div>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-8 col-sm-6 col-xs-12">
-            <p className="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
-          <a href="/#"> Grupo 10 - Tu Doctor Online</a>.
-            </p>
-          </div>
-
-          <div className="col-md-4 col-sm-6 col-xs-12">
-            <ul className="social-icons">
-              <li><a className="facebook" href="/#"><i className="fab fa-facebook-f"></i></a></li>
-              <li><a className="twitter" href="/#"><i className="fab fa-twitter"></i></a></li>
-              <li><a className="dribbble" href="/#"><i className="fab fa-dribbble"></i></a></li>
-              <li><a className="linkedin" href="/#"><i className="fab fa-linkedin-in"></i></a></li>   
-            </ul>
-          </div>
-        </div>
-      </div>
-      </footer>
-
+        </footer>
         {/* *************************************************************** */}
         {/* Footer: Fin */}
-      </div>
+
+
+
       </main>
     </div>
   );
