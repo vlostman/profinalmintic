@@ -2,6 +2,9 @@ Basic project based on a web programmed in React where it intends to function as
 
 ** 98% done
 
+Note: This is the Front-End Side of the project. 
+
+Go to for ----> [Back-End Side](https://github.com/vlostman/profinalback)
 
 
 
